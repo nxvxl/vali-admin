@@ -1,6 +1,6 @@
 <template>
   <div class="app-content">
-    <app-title :props="appTitle"></app-title>
+    <app-title v-bind="appTitle"></app-title>
   </div>
 </template>
 
