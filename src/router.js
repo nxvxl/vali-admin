@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Layout from './components/layouts/Layout';
 import Dashboard from './components/pages/Dashboard';
+import PageLogin from './components/pages/PageLogin';
 
 Vue.use(VueRouter);
 
@@ -13,10 +14,18 @@ const router = new VueRouter({
       component: Layout,
       children: [
         {
-          path: '',
+          path: 'dashboard',
           component: Dashboard
-        }
+        },
       ]
+    },
+    {
+      path: '/page-login',
+      component: PageLogin
+    },
+    {
+      path: '',
+      redirect: '/dashboard'
     }
   ]
 });
