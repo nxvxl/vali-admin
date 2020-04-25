@@ -1,14 +1,25 @@
 <template>
   <div class="app-content">
-    <div class="app-title">
-      <div>
-        <h1><i class="fa fa-dashboard"></i> Blank Page</h1>
-        <p>Start a beautiful journey here</p>
-      </div>
-      <ul class="app-breadcrumb breadcrumb">
-        <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-        <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
-      </ul>
-    </div>
+    <app-title :props="appTitle"></app-title>
   </div>
 </template>
+
+<script>
+import AppTitle from '../includes/AppTitle'
+export default {
+  name: 'Dashboard',
+  data() {
+    return {
+      appTitle: {
+        title: 'Dashboard',
+        icon: 'fa-dashboard',
+        description: 'A free and open source Bootstrap 4 admin template',
+        breadcrumb: ['Dasboard']
+      }
+    }
+  },
+  components: {
+    AppTitle
+  }
+}
+</script>
