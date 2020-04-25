@@ -1,7 +1,7 @@
 <template>
   <div>
     <li v-if="!item.children">
-      <router-link class="app-menu__item" :to="item.to">
+      <router-link class="app-menu__item" :to="item.to" active-class="active">
         <i class="app-menu__icon fa" :class="item.icon"></i>
         <span class="app-menu__label">{{ item.label }}</span> 
       </router-link>

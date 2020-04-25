@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import Layout from './components/layouts/Layout';
 import Dashboard from './components/pages/Dashboard';
 import PageLogin from './components/pages/PageLogin';
+import HelloWorld from './components/HelloWorld';
 
 Vue.use(VueRouter);
 
@@ -17,6 +18,10 @@ const router = new VueRouter({
           path: 'dashboard',
           component: Dashboard
         },
+        {
+          path: '',
+          redirect: 'dashboard'
+        }
       ]
     },
     {
@@ -24,8 +29,8 @@ const router = new VueRouter({
       component: PageLogin
     },
     {
-      path: '',
-      redirect: '/dashboard'
+      path: '*',
+      component: HelloWorld
     }
   ]
 });
