@@ -1,5 +1,5 @@
 <template>
-  <div class="app sidebar-mini">
+  <div class="app sidebar-mini" :class="{ 'sidenav-toggled': sidebarToggled }">
     <Header />
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <Sidebar />
@@ -16,6 +16,11 @@ export default {
   components: {
     Header,
     Sidebar
+  },
+  computed: {
+    sidebarToggled() {
+      return this.$store.state.sidebarToggled
+    }
   }
 }
 </script>
