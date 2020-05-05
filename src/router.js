@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Layout from './components/layouts/Layout';
 import Dashboard from './components/pages/Dashboard';
+import BootstrapComponents from './components/pages/BootstrapComponents';
 import PageLogin from './components/pages/PageLogin';
 import HelloWorld from './components/HelloWorld';
 
@@ -17,6 +18,10 @@ const router = new VueRouter({
         {
           path: 'dashboard',
           component: Dashboard
+        },
+        {
+          path: 'bootstrap-components',
+          component: BootstrapComponents
         },
         {
           path: '',

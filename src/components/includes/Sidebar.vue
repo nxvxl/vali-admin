@@ -26,23 +26,23 @@ export default {
         },
         {
           to: '#',
-          label: 'UI-Elements',
+          label: 'UI Elements',
           icon: 'fa-laptop',
           children: [
             {
-              to: '',
+              to: 'bootstrap-components',
               label: 'Bootstrap Elements'
             },
             {
-              to: '',
+              to: 'https://fontawesome.com/v4.7.0/icons/',
               label: 'Font Icons'
             },
             {
-              to: '',
+              to: 'ui-cards',
               label: 'Cards'
             },
             {
-              to: '',
+              to: 'widgets',
               label: 'Widgets'
             },
           ]
